@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wowbook {
+	color : #333;
+}
+.wowbook-page-content {
+	background: white;
+}
+
+.wowbook-left .wowbook-gutter-shadow{
+	background-image : url('../images/page_left_background.png');
+	opacity : 0.5;
+	width: 60px;
+}
+.wowbook-right .wowbook-gutter-shadow{
+	background-image : url('../images/page_right_background.png');
+	background-position : 0 0;
+	width: 75px;
+}
+
+body {
+	color: black;
+	background: white url("../images/wood.jpg");
+	background-position: 50% top;
+}
+a, a:active, a:visited {
+	text-decoration: none;
+}
+#container {
+    width : 900px;
+    margin : auto;
+	padding-top: 3em;
+}
+
+h1, h2 {
+	font-size : 32px;
+	font-weight : normal;
+	font-family: 'News Cycle', sans-serif;
+    text-shadow: 0 1px 0 rgba(10, 10, 10, 0.5);
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+h2 {
+	font-size:24px;
+	margin-bottom: 0.5em;
+}
+
+nav {
+	li {
+		width : 48px;
+	}
+	height : 46px;
+	position: relative;
+	z-index: 2147483647;
+	zoom: 1;
+	a {
+		display: block;
+		height : 46px;
+		width : 48px;
+		padding: 0;
+		background: black no-repeat;
+		background-position: 8px 7px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow : hidden;
+	}
+	#zoomin    { background-image: url(../images/icons/zoom_in.png); }
+	#zoomout   { background-image: url(../images/icons/zoom_out.png); }
+	#first     { background-image: url(../images/icons/arrow_double_left.png); }
+	#last      { background-image: url(../images/icons/arrow_double_right.png); }
+	#next      { background-image: url(../images/icons/arrow_right.png); }
+	#back      { background-image: url(../images/icons/arrow_left.png); }
+	#slideshow { background-image: url(../images/icons/slideshow_play.png); }
+	#slideshow.wowbook-disabled { background-image: url(../images/icons/slideshow_pause.png); }
+	#flipsound { background-image: url(../images/icons/sound_on.png); }
+	#flipsound.wowbook-disabled { background-image: url(../images/icons/sound_off.png); }
+	a:hover {
+		background-color: #2C2C2C;
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f0f0f0));
+		background-image: -webkit-linear-gradient(top, #555555, #222222);
+		background-image: -moz-linear-gradient(top, #555555, #222222);
+		background-image: -ms-linear-gradient(top, #555555, #222222);
+		background-image: -o-linear-gradient(top, #555555, #222222);
+		background-image: linear-gradient(top, #555555, #222222);
+    }
+    a:active, a:hover, a {
+		outline: none;
+    }
+}
+
+.wowbook-page-content {
+	padding: 1em;
+}
+
+
+#main {
+	position: relative;
+}
+
+#click_to_open {
+	position: absolute;
+	left: 80px; top: 190px;
+}
+
+.js #features {
+	mmargin-left: -12000px;
+}
+#features {
+	mmargin: auto;
+	h1 {
+		font-family: 'BebasNeueRegular', sans-serif;
+		font-size: 32px;
+		color: white;
+		background : #aa2b2b;
+		line-height: 1.5;
+		padding: 5px 5px 0px;
+		margin: 0;
+	}
+	.subtitle {
+		font-family: 'BebasNeueRegular', sans-serif;
+		font-size: 18px;
+		color: black;
+		line-height: 1.5;
+		padding: 5px 5px 0px;
+		font-style : italic;
+	}
+
+	p, ul {
+		font-family: 'News Cycle', sans-serif;
+		font-size: 24px;
+		margin-top: 0.5em;
+	}
+	li {
+		list-style : none;
+	}
+}
+
+#cover {
+	background: white url("../images/cover.jpg") no-repeat;
+}
+
+.feature {
+	padding : 1em 1em;
+
+	h1, h2 {
+		font-family: 'BebasNeueRegular', sans-serif;
+		font-size: 38px;
+		color : black;
+	}
+
+	font-family: 'BebasNeueRegular', sans-serif;
+	height: 500px; width: 400px; background: white;
+}
+
+#features .feature.pagefx {
+	p { font-size: 22px; }
+	.subtitle { margin-top: 0; font-size: 18px; }
+	h1 {
+		font-size: 48px;
+		color: #aa2b2b;
+		background : none;
+		line-height: 0.7;
+		padding: 5px 0px 0px;
+		margin: 0;
+	}
+}
+
+#features .easy {
+	background: white url("../images/easy.png") no-repeat;
+	h1, p, .subtitle { display: none; }
+	ffont-size: 1.5em;
+	ffont-family: lato;
+}
+
+#features .wowbook-right .easy {
+	background-position: right top;
+}
+	.doc {
+		display: none;
+		background: url("../images/doc_page.png");
+		font-size: 32px;
+		line-height: 128px;
+		width: 128px;
+		height: 128px;
+		position: relative;
+		text-align: center;
+	}
+
+#features .design {
+	background: white url("../images/design.png") no-repeat;
+	h1 {
+		background : none;
+		text-indent: -10000px;
+		color : #88bfbf;
+		text-shadow: 1px 1px 0px #447f7f;
+		font-size: 144px;
+		line-height: 0.8;
+		bborder-bottom: 2px solid #88bfbf;
+	}
+	.subtitle {
+	    font-family: 'News Cycle',sans-serif;
+		font-style: normal;
+		font-size: 30px;
+		color : #333;
+    }
+}
+
+#features .wowbook-right {
+	.design {
+		background: white url("../images/design.png") right top;
+		p {
+			text-align: right;
+			position : absolute;
+			bottom: 1.5em;
+			font-size: 30px;
+			padding-right: 1em;
+		}
+	}
+}
+
+
+#zoom-feature{
+	h1 {
+		font-size: 100px;
+		color: #333;
+		background : none;
+		line-height: 1.1;
+		padding: 5px 0px 0px;
+		text-align: right;
+	}
+	background: white url("../images/zoom.jpg") no-repeat;
+}
+#zoom-feature2{
+	background: white url("../images/zoom.jpg") right top no-repeat;
+}
+
+.deeplinking {
+	color: white;
+	h1 {
+		color : white;
+		background: #3d567d !important;
+	}
+	background: url("../images/chain.jpg") no-repeat;
+	a, a:active, a:visited {
+		color: #f8f8f8;
+		text-decoration: underline;
+	}
+}
+.wowbook-right .deeplinking {
+	background-position: top right;
+}
+
+#features .feature.numbering {
+	h1 { color : #AA2B2B; background: none; font-size: 40px; padding-left:0; padding-right: 0; }
+	p { font-size: 23px; }
+	background: url("../images/numbering.png") white no-repeat;
+	.wowbook-page-number { text-indent: 100%; overflow:hidden; }
+}
+
+#features .feature.slideshow {
+	h1 { color : #AA2B2B; background: none; font-size: 40px; padding-left:0; padding-right: 0; }
+	a {
+		display : block;
+		text-align: center;
+	}
+}
+
+#features .feature.flash {
+	p { font-size: 20px; padding: 0.7em;}
+	h1 { display: none }
+	background: url("../images/flash.png") white no-repeat;
+	padding-top: 170px;
+}
+.feature.flash-demo {
+	background: url("../images/flash.png") white no-repeat;
+	background-position: top right;
+	padding-top: 100px;
+	text-align: center;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+
+.more {
+	h1 { display: none }
+	background: url("../images/more.png") white no-repeat;
+	padding-top: 30px;
+	ul {
+		margin-left: 1em;
+	}
+	li {
+		margin-bottom: 0.7em;
+	}
+}
+.wowbook-right .more {
+	background-position: top right;
+}
